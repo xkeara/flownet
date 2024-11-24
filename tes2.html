@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FlowNet - Voucher WiFi & PC Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: blur(5px);
+        }
+        @keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.slide-in {
+    opacity: 0; /* Hidden by default */
+    animation: slideIn 0.5s ease-out forwards;
+}
+
+.slide-in:nth-child(1) {
+    animation-delay: 0s; /* Delay untuk elemen pertama */
+}
+
+.slide-in:nth-child(2) {
+    animation-delay: 0.2s; /* Delay untuk elemen kedua */
+}
+
+.slide-in:nth-child(3) {
+    animation-delay: 0.4s; /* Delay untuk elemen ketiga */
+}
+.hero-text {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.text-gray-200 {
+    color: #e5e7eb; /* Abu-abu terang untuk teks deskripsi */
+}
+
+a:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+    </style>
+</head>
+<body class="text-gray-800">
+    <nav class="sticky-nav bg-gray-900/95 text-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold">
+                <img class="w-40"src="foto/t.-removebg-preview.png">
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#voucher" class="hover:text-gray-300 transition-colors">Voucher WiFi</a>
+                <a href="#service" class="hover:text-gray-300 transition-colors">Servis PC</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Rest of the code remains the same -->
+    <div class="relative bg-gray-800 text-white py-20 bg-cover bg-center" style="background-image: url('foto/download.jpg');">
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center relative z-10">
+            <!-- Left Content -->
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4 hero-text">
+                    Internet Cepat & Servis PC Terbaik untuk Anda
+                </h1>
+                <p class="text-lg mb-6 text-gray-200">
+                    Solusi WiFi murah tanpa batas untuk kebutuhan online Anda. Dapatkan layanan servis komputer profesional yang andal, cepat, dan hemat.
+                </p>
+                <div class="flex flex-col md:flex-row md:space-x-4">
+                    <a href="https://wa.me/0882000203629" class="bg-gray-800 hover:bg-gray-900 text-white px-6 py-3 rounded-lg text-lg mb-4 md:mb-0">
+                        Berlangganan Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <section id="voucher" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Paket Voucher WiFi</h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-3xl mx-auto">
+                <div class="border rounded-lg p-6 text-center hover:shadow-lg transition-shadow slide-in">
+                    <h3 class="text-xl font-bold mb-2">Paket Harian</h3>
+                    <p class="text-3xl font-bold mb-4">Rp 3.000</p>
+                    <ul class="mb-6 text-left pl-4">
+                        <li class="mb-2">✓ Durasi 24 jam</li>
+                        <li class="mb-2">✓ Unlimited Quota</li>
+                        <li class="mb-2">✓ Speed up to 10Mbps</li>
+                    </ul>
+                    <button class="bg-gray-800 hover:bg-gray-700 text-white px-6 py-2 rounded w-full">
+                        Beli Voucher
+                    </button>
+                </div>
+            
+                <div class="border rounded-lg p-6 text-center bg-gray-50 hover:shadow-lg transition-shadow slide-in">
+                    <h3 class="text-xl font-bold mb-2">Paket Mingguan</h3>
+                    <p class="text-3xl font-bold mb-4">Rp 10.000</p>
+                    <ul class="mb-6 text-left pl-4">
+                        <li class="mb-2">✓ Durasi 7 hari</li>
+                        <li class="mb-2">✓ Unlimited Quota</li>
+                        <li class="mb-2">✓ Speed up to 10Mbps</li>
+                    </ul>
+                    <button class="bg-gray-800 hover:bg-gray-700 text-white px-6 py-2 rounded w-full">
+                        Beli Voucher
+                    </button>
+                </div>
+            
+                <div class="border rounded-lg p-6 text-center hover:shadow-lg transition-shadow slide-in">
+                    <h3 class="text-xl font-bold mb-2">Paket Bulanan</h3>
+                    <p class="text-3xl font-bold mb-4">Rp 20.000</p>
+                    <ul class="mb-6 text-left pl-4">
+                        <li class="mb-2">✓ Durasi 30 hari</li>
+                        <li class="mb-2">✓ Unlimited Quota</li>
+                        <li class="mb-2">✓ Speed up to 10Mbps</li>
+                    </ul>
+                    <button class="bg-gray-800 hover:bg-gray-700 text-white px-6 py-2 rounded w-full">
+                        Beli Voucher
+                    </button>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+    <section id="service" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Jasa Servis & Upgrade PC</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold mb-4">Servis PC/Laptop</h3>
+                    <ul class="mb-4 pl-4">
+                        <li class="mb-2">• Install Ulang Windows</li>
+                        <li class="mb-2">• Perbaikan Software</li>
+                        <li class="mb-2">• Pembersihan Hardware</li>
+                        <li class="mb-2">• Ganti Pasta Processor</li>
+                        <li class="mb-2">• Diagnosis Kerusakan</li>
+                    </ul>
+                    <p class="text-gray-600">*Harga menyesuaikan jenis layanan</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                    <h3 class="text-xl font-bold mb-4">Upgrade Komponen</h3>
+                    <ul class="mb-4 pl-4">
+                        <li class="mb-2">• Upgrade RAM</li>
+                        <li class="mb-2">• Ganti/Tambah Storage</li>
+                        <li class="mb-2">• Upgrade Processor</li>
+                        <li class="mb-2">• Ganti Power Supply</li>
+                        <li class="mb-2">• Upgrade VGA Card</li>
+                    </ul>
+                    <p class="text-gray-600">*Harga menyesuaikan komponen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+  <!-- FAQ Section -->
+  <section class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+      <div class="max-w-3xl mx-auto">
+        <!-- FAQ Item 1 -->
+        <div class="mb-4">
+          <details class="bg-white rounded-lg shadow-md">
+            <summary class="p-4 font-semibold cursor-pointer">
+              Bagaimana cara membeli voucher WiFi?
+            </summary>
+            <div class="px-4 pb-4">
+              Anda dapat membeli voucher WiFi melalui WhatsApp kami di (+62) 882-0002-3629. Pembayaran dapat dilakukan melalui transfer bank atau e-wallet. Voucher akan dikirimkan segera setelah pembayaran dikonfirmasi.
+            </div>
+          </details>
+        </div>
+  
+        <!-- FAQ Item 2 -->
+        <div class="mb-4">
+          <details class="bg-white rounded-lg shadow-md">
+            <summary class="p-4 font-semibold cursor-pointer">
+              Berapa lama proses servis PC/Laptop?
+            </summary>
+            <div class="px-4 pb-4">
+              Waktu servis bervariasi tergantung jenis kerusakan. Install ulang Windows biasanya selesai dalam 1-2 hari, sementara perbaikan hardware bisa memakan waktu 2-5 hari kerja. Kami akan memberikan estimasi waktu setelah melakukan diagnosis.
+            </div>
+          </details>
+        </div>
+  
+        <!-- FAQ Item 3 -->
+        <div class="mb-4">
+          <details class="bg-white rounded-lg shadow-md">
+            <summary class="p-4 font-semibold cursor-pointer">
+              Apakah ada garansi untuk jasa servis?
+            </summary>
+            <div class="px-4 pb-4">
+              Ya, kami memberikan garansi servis selama 30 hari untuk perbaikan software dan 90 hari untuk penggantian hardware. Garansi mencakup kerusakan yang sama dan berlaku jika segel servis tidak rusak.
+            </div>
+          </details>
+        </div>
+  
+        <!-- FAQ Item 4 -->
+        <div class="mb-4">
+          <details class="bg-white rounded-lg shadow-md">
+            <summary class="p-4 font-semibold cursor-pointer">
+              Apakah bisa request upgrade komponen sesuai budget?
+            </summary>
+            <div class="px-4 pb-4">
+              Ya, kami dapat memberikan rekomendasi upgrade komponen yang sesuai dengan budget dan kebutuhan Anda. Konsultasikan kebutuhan Anda melalui WhatsApp untuk mendapatkan saran terbaik.
+            </div>
+          </details>
+        </div>
+  
+        <!-- FAQ Item 5 -->
+        <div class="mb-4">
+          <details class="bg-white rounded-lg shadow-md">
+            <summary class="p-4 font-semibold cursor-pointer">
+              Apakah ada layanan servis PC/Laptop panggilan?
+            </summary>
+            <div class="px-4 pb-4">
+              Ya, kami menyediakan layanan servis panggilan untuk area Bandung dengan biaya tambahan. Biaya akan disesuaikan dengan lokasi dan jenis servis yang dibutuhkan.
+            </div>
+          </details>
+        </div>
+  
+        <!-- FAQ Item 6 -->
+        <div class="mb-4">
+          <details class="bg-white rounded-lg shadow-md">
+            <summary class="p-4 font-semibold cursor-pointer">
+              Bagaimana jika terjadi masalah dengan koneksi WiFi?
+            </summary>
+            <div class="px-4 pb-4">
+              Tim technical support kami siap membantu 24/7. Silakan hubungi kami melalui WhatsApp atau telepon untuk mendapatkan bantuan teknis segera.
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+  details > summary {
+    list-style: none;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+  details > summary::after {
+    content: '+';
+    float: right;
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: transform 0.2s;
+  }
+  details[open] > summary::after {
+    transform: rotate(45deg);
+  }
+  </style>
+
+    <section id="kontak" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Hubungi Kami</h2>
+            <div class="max-w-md mx-auto text-center">
+                <p class="mb-4">Untuk pembelian voucher dan konsultasi servis PC:</p>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <p class="font-bold mb-2">WhatsApp/Telp:</p>
+                    <p class="text-xl mb-4">(+62) 882-0002-3629</p>
+                    <p class="font-bold mb-2">Alamat:</p>
+                    <p>Jl. Kliningan No.6, Turangga, Kec. Lengkong, Kota Bandung, Jawa Barat 40264</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="text-2xl font-bold mb-4">Flownet</div>
+            <p>Jl. Kliningan No.6, Turangga, Kec. Lengkong, Kota Bandung, Jawa Barat 40264</p>
+            <p>Email: info@flownet.com | Telp: (+62) 882-0002-03629</p>
+            <p class="mt-6">© 2024 FlowNet. All rights reserved.</  p>
+        </div>
+    </footer>
+</body>
+</html>
